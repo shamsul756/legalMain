@@ -10,7 +10,7 @@ const GuestOverviewPage = () => {
                     <div className="p-6 flex flex-row items-center justify-between">
                         <div className="space-y-1">
                             <span className="text-slate-400 text-xs font-bold uppercase tracking-wider">Total Spent</span>
-                            <h2 className="text-3xl font-extrabold text-white">
+                            <h2 className="text-3xl font-extrabold text-black">
                                 $298.00
                             </h2>
                         </div>
@@ -24,7 +24,7 @@ const GuestOverviewPage = () => {
                     <div className="p-6 flex flex-row items-center justify-between">
                         <div className="space-y-1">
                             <span className="text-slate-400 text-xs font-bold uppercase tracking-wider">Tickets Booked</span>
-                            <h2 className="text-3xl font-extrabold text-white">
+                            <h2 className="text-3xl font-extrabold text-black">
                                 4
                             </h2>
                         </div>
@@ -38,7 +38,7 @@ const GuestOverviewPage = () => {
                     <div className="p-6 flex flex-row items-center justify-between">
                         <div className="space-y-1">
                             <span className="text-slate-400 text-xs font-bold uppercase tracking-wider">Upcoming Events</span>
-                            <h2 className="text-3xl font-extrabold text-white">
+                            <h2 className="text-3xl font-extrabold text-black">
                                 2
                             </h2>
                         </div>
@@ -52,7 +52,7 @@ const GuestOverviewPage = () => {
             {/* Profile Update Panel */}
             <Card className="glass border-white/5 max-w-3xl" radius="lg">
                 <CardHeader className="flex flex-col gap-1 pb-4 border-b border-white/5">
-                    <h3 className="text-xl font-bold text-white">Profile Information</h3>
+                    <h3 className="text-xl font-bold text-black">Profile Information</h3>
                     <p className="text-slate-400 text-xs">Update your public details and biography details.</p>
                 </CardHeader>
                 <div className="pt-6">
@@ -76,12 +76,12 @@ const GuestOverviewPage = () => {
                             label="Biography"
                             labelPlacement="outside"
                             placeholder="Tell us about yourself..."
-                            className="w-full bg-slate-900/50 border border-white/10 rounded-xl focus:outline-none min-h-[100px] text-white text-sm"
+                            className="w-full bg-slate-900/50 border border-white/10 rounded-xl focus:outline-none min-h-[100px] text-black text-sm"
                         />
 
                         <Button
                             type="submit"
-                            className="bg-indigo-600 hover:bg-indigo-500 text-white font-bold h-11 px-6 shadow-lg shadow-indigo-500/10 hover:shadow-indigo-500/20"
+                            className="bg-indigo-600 hover:bg-indigo-500 text-black font-bold h-11 px-6 shadow-lg shadow-indigo-500/10 hover:shadow-indigo-500/20"
                             radius="lg"
                         >
                             Save Profile
