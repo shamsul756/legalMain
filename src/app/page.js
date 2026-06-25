@@ -10,8 +10,8 @@ export default function Home() {
    <div>
     <Banner/>
     <BrowseLawyersPage/>
-    {/* <ExtraSection/>
-    <ServicesFeatures/>
+    <ExtraSection/>
+    {/* <ServicesFeatures/>
     <Appraisals/> */}
    </div>
   );
