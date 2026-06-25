@@ -16,7 +16,7 @@ export default function BookingWidget({ ticketPrice, availableSeats, eventId, ev
 
   const isSoldOut = availableSeats <= 0;
 
-  const totalAmount = ticketPrice.toFixed(2) * quantity;
+  const totalAmount = ticketPrice * quantity;
 
   const handleBookTicket = async () => {
 

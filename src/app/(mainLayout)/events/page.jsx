@@ -60,8 +60,8 @@ export default async function BrowseLawyersPage({ searchParams }) {
         <div className="min-h-screen py-16 px-6 max-w-7xl mx-auto w-full space-y-12">
             {/* HEADER */}
             <div className="text-center md:text-left space-y-2">
-                <h1 className="text-4xl font-extrabold tracking-tight text-white">Find Top Legal Experts</h1>
-                <p className="text-slate-400 text-sm max-w-xl">
+                <h1 className="text-4xl font-extrabold tracking-tight text-black mx-auto text-center">Find Top Legal Experts</h1>
+                <p className="text-slate-400 text-sm max-w-xl text-center mx-auto">
                     Search, filter, and consult with verified legal professionals. Secure booking guarantees your appointment slot instantly.
                 </p>
             </div>
