@@ -14,7 +14,12 @@ const DashSideBar = () => {
 
 const lawerMenu = [
   // Changed href from /dashboard/lawerBoard to /dashboard to match your main layout dashboard entry
-  { key: "overview", label: "Overview", icon: FaUsers, href: "dashboard/guest" }, 
+    {
+    key: "overview",
+    label: "Overview",
+    icon: FaUsers,
+    href: "/dashboard/lawer/overview",
+  },
   { key: "lawers", label: "Lawers", icon: FaBuilding, href: "/dashboard/lawer" },
   // Changed href from manage-events to manage-event to match your actual folder name
   { key: "manage-events", label: "Manage Events", icon: FaCalendarAlt, href: "/dashboard/lawer/manage-event" }, 

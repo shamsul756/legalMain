@@ -43,8 +43,8 @@ export default function LawerCard({ event, lawyer }) {
         <span className="text-pink-400 font-extrabold text-lg">
           {currentEvent.price === 0 
             ? "Free" 
-            : currentEvent.price 
-              ? `$${currentEvent.price.toFixed(2)}` 
+            : currentEvent?.price 
+              ? `$${currentEvent?.price.toFixed(2)}` 
               : "Pricing unavailable"}
         </span>
         <Link href={`/events/${currentEvent._id || ""}`}>
