@@ -1,6 +1,6 @@
 "use client";
 
-import DashboardHeading from "@/components/DashboardHeading";
+
 import DashHeader from "@/components/DashHeader";
 import { useSession } from "@/lib/auth-client";
 import { Card, CardHeader, Button } from "@heroui/react";
