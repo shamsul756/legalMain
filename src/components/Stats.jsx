@@ -1,5 +1,5 @@
 "use client";
-
+"using animate css"
 import "animate.css";
 import { Card } from "@heroui/react";
 
