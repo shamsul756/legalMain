@@ -23,7 +23,7 @@ const features = [
   },
   {
     icon: <FaUsers size={24} />,
-    title: "Client & Lawyer Dashboard",
+    title: "Client & lawyer Dashboard",
     description:
       "Dedicated dashboards for managing cases, consultations, documents, and communication in a structured workflow.",
   },
@@ -44,7 +44,7 @@ export default function ServicesFeatures() {
   <h2 className="text-4xl md:text-5xl font-bold text-white mt-4 leading-tight animate__animated animate__fadeInUp animate__fast">
     Trusted Legal Platform
     <span className="block text-blue-400 animate__animated animate__fadeInUp animate__delay-1s">
-      Built for Clients & Lawyers
+      Built for Clients & lawyers
     </span>
   </h2>
 

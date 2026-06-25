@@ -1,7 +1,7 @@
 
 import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
-import EventCard from "./LawerCard";
+import EventCard from "./lawyerCard";
 import { fetchFeaturedEvents } from "@/lib/api/events/data";
 
 

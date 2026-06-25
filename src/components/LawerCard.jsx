@@ -4,7 +4,7 @@ import { FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
 import Image from "next/image";
 
 
-export default function LawerCard({ event, lawyer }) {
+export default function lawerCard({ event, lawyer }) {
   const currentEvent = event || lawyer || {};
   const imageSrc = currentEvent.banner || currentEvent.image || currentEvent.photo;
   const displayImage = imageSrc && (imageSrc.startsWith("http") || imageSrc.startsWith("/")) ? imageSrc : "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4";
@@ -21,7 +21,7 @@ export default function LawerCard({ event, lawyer }) {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         <span className="absolute top-4 left-4 bg-slate-950/80 backdrop-blur-md text-pink-400 font-bold text-xs uppercase tracking-wide px-3 py-1.5 rounded-full border border-pink-500/20 z-10">
-          {currentEvent.category || currentEvent.specialty || "Lawyer"}
+          {currentEvent.category || currentEvent.specialty || "lawyer"}
         </span>
       </div>
       <div className="p-6 flex-grow space-y-4">

@@ -12,23 +12,23 @@ const DashSideBar = () => {
   }
 
 
-const lawerMenu = [
-  // Changed href from /dashboard/lawerBoard to /dashboard to match your main layout dashboard entry
+const lawyerMenu = [
+  // Changed href from /dashboard/lawyerBoard to /dashboard to match your main layout dashboard entry
     {
     key: "overview",
     label: "Overview",
     icon: FaUsers,
-    href: "/dashboard/lawer/overview",
+    href: "/dashboard/lawyer/overview",
   },
-  { key: "lawers", label: "Lawers", icon: FaBuilding, href: "/dashboard/lawer" },
+  { key: "lawyers", label: "lawyers", icon: FaBuilding, href: "/dashboard/lawyer" },
   // Changed href from manage-events to manage-event to match your actual folder name
-  { key: "manage-events", label: "Manage Events", icon: FaCalendarAlt, href: "/dashboard/lawer/manage-event" }, 
+  { key: "manage-events", label: "Manage Events", icon: FaCalendarAlt, href: "/dashboard/lawyer/manage-event" }, 
   { key: "guest", label: "Guest", icon: FaUsers, href: "/dashboard/guest" },
 ]
   const guestMenu = [
     { key: "overview", label: "Overview", icon: FaUserCircle, href: "dashboard/guest" },
-    { key: "tickets", label: "My Tickets", icon: FaTicketAlt, href: "dashboard/guest/tickets" },
-    { key: "payments", label: "Payments", icon: FaHistory, href: "dashboard/guest/payments" },
+    { key: "tickets", label: "My Tickets", icon: FaTicketAlt, href: "dashboard/guest/ticket" },
+    { key: "payments", label: "Payments", icon: FaHistory, href: "dashboard/guest/payment" },
   ]
 
   const adminMenu = [
@@ -39,7 +39,7 @@ const lawerMenu = [
 
   const role = session?.user?.role;
 
-  const manuItems = role === "lawer" ? lawerMenu : role === "guest" ? guestMenu : role === "admin" ? adminMenu : null;
+  const manuItems = role === "lawyer" ? lawyerMenu : role === "guest" ? guestMenu : role === "admin" ? adminMenu : null;
 
   return (
     <aside className="w-64 h-screen border-r border-white/5">
@@ -65,7 +65,7 @@ const lawerMenu = [
               <p className="text-white text-sm font-bold truncate leading-tight">
                 {session?.user?.name}
               </p>
-              <span className={`text-[10px] font-bold uppercase tracking-wider ${role === "admin" ? "text-yellow-400" : role === "lawer" ? "text-indigo-400" : "text-pink-400"}`}>
+              <span className={`text-[10px] font-bold uppercase tracking-wider ${role === "admin" ? "text-yellow-400" : role === "lawyer" ? "text-indigo-400" : "text-pink-400"}`}>
                 {role}
               </span>
             </div>

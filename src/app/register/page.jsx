@@ -196,7 +196,7 @@ export default function RegisterPage() {
                             >
                                 <option value="">Select a role</option>
                                 <option value="guest">User</option>
-                                <option value="lawyer">Lawyer</option>
+                                <option value="lawyer">lawyer</option>
                             </select>
                             {errors.role && (
                                 <p className="text-red-400 text-sm mt-1">{errors.role.message}</p>

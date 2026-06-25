@@ -4,7 +4,7 @@ import { getUser } from "@/lib/api/session";
 import { Card } from "@heroui/react";
 import { FaCrown, FaBriefcase, FaHourglassHalf, FaDollarSign } from "react-icons/fa";
 
-const LawyerOverviewPage = async () => {
+const lawyerOverviewPage = async () => {
     // ডামি স্ট্যাটাস ডাটা (পরবর্তীতে ডাটাবেজ থেকে আনবেন)
     const stats = {
         totalHires: 12,
@@ -13,7 +13,7 @@ const LawyerOverviewPage = async () => {
     };
 
     const user = await getUser();
-    const isVerifiedLawyer = user?.isVerified; 
+    const isVerifiedlawyer = user?.isVerified; 
 
     return (
         <div className="space-y-6 mt-6">
@@ -65,7 +65,7 @@ const LawyerOverviewPage = async () => {
             </div>
 
             {/* Verification Fee Alert Banner */}
-            {!isVerifiedLawyer ? (
+            {!isVerifiedlawyer ? (
                 <Card className="border border-yellow-500/20 bg-gradient-to-r from-yellow-500/5 via-amber-600/5 to-transparent relative overflow-hidden" radius="lg">
                     <div className="p-8 flex flex-col md:flex-row items-center justify-between gap-6 z-10">
                         <div className="space-y-2">
@@ -73,7 +73,7 @@ const LawyerOverviewPage = async () => {
                                 <FaCrown className="text-yellow-400" /> Complete Verification to Publish Profile
                             </h3>
                             <p className="text-slate-400 text-xs max-w-xl leading-relaxed">
-                                Lawyers must pay a <strong className="text-yellow-400">one-time publishing fee</strong> to make their legal services visible to clients globally.
+                                lawyers must pay a <strong className="text-yellow-400">one-time publishing fee</strong> to make their legal services visible to clients globally.
                             </p>
                         </div>
                         <div>
@@ -100,4 +100,4 @@ const LawyerOverviewPage = async () => {
     );
 };
 
-export default LawyerOverviewPage;
+export default lawyerOverviewPage;

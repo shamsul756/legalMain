@@ -35,7 +35,7 @@ const Footer = () => {
 
               <div>
                 <h4 className="text-white text-xl font-bold">50+</h4>
-                <p className="text-xs">Lawyers</p>
+                <p className="text-xs">lawyers</p>
               </div>
 
               <div>

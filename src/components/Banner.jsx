@@ -68,7 +68,7 @@ className="w-full"
               href="/lawyers"
               className="inline-flex mt-8 px-8 py-4 bg-blue-600 hover:bg-blue-500 rounded-2xl text-white font-semibold"
             >
-              Explore Lawyers
+              Explore lawyers
             </Link>
 
           </div>
@@ -182,7 +182,7 @@ className="w-full"
             href="/lawyers"
             className="group px-8 py-4 bg-blue-600 hover:bg-blue-500 rounded-2xl text-white font-semibold flex items-center gap-2 transition"
           >
-            Find a Lawyer
+            Find a lawyer
             <ArrowRight className="group-hover:translate-x-1 transition" />
           </Link>
 
@@ -200,7 +200,7 @@ className="w-full"
 
           <div>
             <h3 className="text-3xl font-bold text-white">500+</h3>
-            <p className="text-slate-400">Verified Lawyers</p>
+            <p className="text-slate-400">Verified lawyers</p>
           </div>
 
           <div>
@@ -285,7 +285,7 @@ className="w-full"
             />
 
             <button className="bg-blue-600 hover:bg-blue-500 rounded-xl text-white font-semibold transition">
-              Find Lawyer
+              Find lawyer
             </button>
 
           </div>
@@ -297,7 +297,7 @@ className="w-full"
 
           <div>
             <h3 className="text-3xl font-bold text-white">500+</h3>
-            <p className="text-slate-400">Verified Lawyers</p>
+            <p className="text-slate-400">Verified lawyers</p>
           </div>
 
           <div>

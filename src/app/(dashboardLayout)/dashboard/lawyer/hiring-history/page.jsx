@@ -105,7 +105,7 @@ const HiringHistory = () => {
                             <table className="w-full text-left border-collapse text-sm text-slate-300">
                                 <thead>
                                     <tr className="border-b border-white/10 text-slate-400 uppercase text-xs tracking-wider">
-                                        <th className="pb-3 pl-2">Lawyer</th>
+                                        <th className="pb-3 pl-2">lawyer</th>
                                         <th className="pb-3">Specialization</th> {/* কলাম যোগ করা হয়েছে */}
                                         <th className="pb-3">Date</th>
                                         <th className="pb-3">Fee</th>

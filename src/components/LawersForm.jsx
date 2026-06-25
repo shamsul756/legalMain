@@ -11,7 +11,7 @@ import {
 } from "@heroui/react";
 import toast from "react-hot-toast";
 
-const LawyersForm = () => { // বানান ঠিক করা হয়েছে
+const lawyersForm = () => { // বানান ঠিক করা হয়েছে
     const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleSubmitChamber = async (e) => {
@@ -25,9 +25,9 @@ const LawyersForm = () => { // বানান ঠিক করা হয়েছ�
             console.log("Law Firm / Chamber Data: ", chamberData);
             
             // আপনার ব্যাকএন্ড বা অ্যাকশন এপিআই কল এখানে হবে:
-            // const res = await updateLawyerChamber(chamberData);
+            // const res = await updatelawyerChamber(chamberData);
 
-            toast.success("Lawyer's professional credentials updated!");
+            toast.success("lawyer's professional credentials updated!");
         } catch (error) {
             console.error(error);
             toast.error("Failed to update credentials!");
@@ -40,7 +40,7 @@ const LawyersForm = () => { // বানান ঠিক করা হয়েছ�
         <div className="mt-6 space-y-6 max-w-3xl mx-auto w-full">
             <Card className="border border-white/5 bg-slate-900/40 backdrop-blur-xl shadow-2xl rounded-2xl p-2" radius="lg">
                 <CardHeader className="flex flex-col gap-1 pb-4 border-b border-white/5 p-6 items-start">
-                    <h3 className="text-xl font-bold text-white">Lawyer & Chamber Details</h3>
+                    <h3 className="text-xl font-bold text-white">lawyer & Chamber Details</h3>
                     <p className="text-slate-400 text-xs">Review and edit your professional law firm or independent chamber credentials.</p>
                 </CardHeader>
                 
@@ -113,4 +113,4 @@ const LawyersForm = () => { // বানান ঠিক করা হয়েছ�
     );
 };
 
-export default LawyersForm;
+export default lawyersForm;

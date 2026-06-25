@@ -55,12 +55,12 @@ const ManageLegalProfilePage = () => {
             console.log("Submitting Data: ", updatedProfileData);
 
             // আপনার ব্যাকএন্ড এপিআই এখানে কল করুন:
-            // const result = await updateLawyerProfile(updatedProfileData);
+            // const result = await updatelawyerProfile(updatedProfileData);
             const result = { success: true }; 
 
             if (result.success) {
                 toast.success("Legal profile updated successfully!");
-                router.push("/dashboard"); // অ্যাসাইনমেন্টের ড্যাশবোর্ড পাথে রিডাইরেক্ট
+                router.push("/events"); // অ্যাসাইনমেন্টের ড্যাশবোর্ড পাথে রিডাইরেক্ট
             } else {
                 toast.error(result.message || "Failed to update profile.");
             }

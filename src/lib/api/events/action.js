@@ -17,6 +17,6 @@ export const deleteEvent = async (id) => {
   //   console.log(data, id, 'Update Org');
 
   const resData = await deleteMutation(`/api/events/${id}`);
-  revalidatePath('/dashboard/lawer/manage-events');
+  revalidatePath('/dashboard/lawyer/manage-events');
   return resData;
 };

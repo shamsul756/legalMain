@@ -1,4 +1,4 @@
-### ⚖️ LegalEase – Smart Legal Service & Lawyer Hiring Platform
+### ⚖️ LegalEase – Smart Legal Service & lawyer Hiring Platform
 
 **LegalEase** is a modern, feature-rich legal service platform designed to bridge the gap between clients and professional lawyers. The platform enables users to discover, compare, and hire experienced lawyers based on their specialization, consultation fees, and professional profiles. With an elegant user interface and seamless user experience, LegalEase simplifies the process of finding trusted legal assistance anytime, anywhere.
 
@@ -7,13 +7,13 @@ Built using **Next.js**, **MongoDB**, **Express.js**, **HeroUI**, and secured wi
 ### ✨ Key Features
 
 🔹 **Role-Based Authentication & Authorization**
-Secure login and registration system with different user roles, including Clients and Lawyers.
+Secure login and registration system with different user roles, including Clients and lawyers.
 
-🔹 **Lawyer Discovery & Hiring**
+🔹 **lawyer Discovery & Hiring**
 Users can browse lawyer profiles, view specializations, consultation fees, experience, and hire lawyers directly from the platform.
 
-🔹 **Lawyer Dashboard**
-Lawyers can manage their legal profiles, update service information, track hiring requests, and monitor client interactions.
+🔹 **lawyer Dashboard**
+lawyers can manage their legal profiles, update service information, track hiring requests, and monitor client interactions.
 
 🔹 **Premium Membership System**
 Integrated premium subscription functionality with payment processing to unlock advanced platform features.

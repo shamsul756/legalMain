@@ -63,7 +63,7 @@ export default function FilterPanel() {
       <div className="gap-6 grid grid-cols-1 md:grid-cols-4 items-end">
         {/* Search Input */}
         <div className="flex flex-col gap-2">
-          <Label htmlFor="search-lawyer" className="text-xs font-bold uppercase tracking-wider text-slate-400">Search Lawyer</Label>
+          <Label htmlFor="search-lawyer" className="text-xs font-bold uppercase tracking-wider text-slate-400">Search lawyer</Label>
           <Input
             value={search}
             onChange={e => setSearch(e.target.value)}

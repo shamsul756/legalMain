@@ -9,15 +9,15 @@ import { baseURL } from "@/lib/api/baseUrl";
 import BookingWidget from "@/components/BookingWidget"; // এই উইজেটের ভেতরে টিকিট সিটের বদলে ফি এবং ডেট হ্যান্ডেল করবেন
 
 // আইনজীবী বা আইনি সেবার সিঙ্গেল ডাটা ফেচ করার ফাংশন
-const fetchLawyerDetails = async (id) => {
+const fetchlawyerDetails = async (id) => {
     const res = await fetch(`${baseURL}/api/lawyers/${id}`);
     const data = await res.json();
     return data;
 }
 
-export default async function LawyerDetailsPage({ params }) {
+export default async function lawyerDetailsPage({ params }) {
     const { id } = await params;
-    const lawyer = await fetchLawyerDetails(id);
+    const lawyer = await fetchlawyerDetails(id);
 
     return (
         <div className="min-h-screen py-16 px-6 max-w-6xl mx-auto w-full space-y-12">
@@ -28,7 +28,7 @@ export default async function LawyerDetailsPage({ params }) {
                     className="text-slate-400 hover:text-white"
                     startContent={<FaArrowLeft />}
                 >
-                    Back to Lawyers List
+                    Back to lawyers List
                 </Button>
             </Link>
 
@@ -36,7 +36,7 @@ export default async function LawyerDetailsPage({ params }) {
             <div className="relative h-[300px] md:h-[400px] w-full rounded-3xl overflow-hidden shadow-2xl border border-white/5">
                 <Image
                     src={lawyer?.image || lawyer?.banner} // আইনজীবীর ছবি বা কভার
-                    alt={lawyer?.name || "Lawyer Profile"}
+                    alt={lawyer?.name || "lawyer Profile"}
                     fill
                     className="object-cover"
                     priority
@@ -50,7 +50,7 @@ export default async function LawyerDetailsPage({ params }) {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-                {/* Left Column: Lawyer Biography & Experience */}
+                {/* Left Column: lawyer Biography & Experience */}
                 <div className="lg:col-span-2 space-y-10">
                     <div className="space-y-4">
                         <h1 className="text-4xl font-extrabold tracking-tight text-white md:text-5xl">

@@ -1,8 +1,8 @@
 // import { roleValidator } from "@/lib/api/session";
 
-const LawerLayout = async ({ children }) => {
+const lawyerLayout = async ({ children }) => {
     // await roleValidator("organizer")
     return children
 };
 
-export default LawerLayout;
+export default lawyerLayout;

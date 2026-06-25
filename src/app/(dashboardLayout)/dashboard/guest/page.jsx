@@ -63,6 +63,7 @@ const GuestOverviewPage = () => {
                             placeholder="John Doe"
                             className="bg-slate-900/50 border-white/10 hover:border-pink-500/50 focus-within:!border-pink-500"
                         />
+                        <br />
 
                         <Input
                             label="Avatar URL"
@@ -70,7 +71,7 @@ const GuestOverviewPage = () => {
                             placeholder="https://api.dicebear.com/7.x/adventurer/svg?seed=John"
                             className="bg-slate-900/50 border-white/10 hover:border-pink-500/50 focus-within:!border-pink-500"
                         />
-
+                    
                         <TextArea
                             id="bio"
                             label="Biography"

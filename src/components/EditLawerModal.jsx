@@ -24,7 +24,7 @@ const LOCATIONS = [
   "Online Consultation",
 ];
 
-const EditLawyerModal = ({ isModalOpen, setIsModalOpen, editingLawyer, onRefresh }) => {
+const EditlawyerModal = ({ isModalOpen, setIsModalOpen, editinglawyer, onRefresh }) => {
   const {
     register,
     handleSubmit,
@@ -32,6 +32,7 @@ const EditLawyerModal = ({ isModalOpen, setIsModalOpen, editingLawyer, onRefresh
   } = useForm();
 
   const onSubmit = async (data) => {
+      console.log("Form Data:", data);
     const updateData = {
       name: data.name,
       category: data.category,
@@ -51,7 +52,7 @@ const EditLawyerModal = ({ isModalOpen, setIsModalOpen, editingLawyer, onRefresh
     try {
       // আপনার এক্সপ্রেস ব্যাকএন্ড এপিআই সরাসরি কল করা বা server action ব্যবহার করা
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_BASE_URL}/api/lawyer/${editingLawyer?._id}`,
+        `${process.env.NEXT_PUBLIC_BASE_URL}/api/lawyer/${editinglawyer?._id}`,
         {
           method: "PATCH",
           headers: {
@@ -89,7 +90,7 @@ const EditLawyerModal = ({ isModalOpen, setIsModalOpen, editingLawyer, onRefresh
                   <div className="w-full">
                     <Label htmlFor="name">Full Name</Label>
                     <Input
-                      defaultValue={editingLawyer?.name}
+                      defaultValue={editinglawyer?.name}
                       className="w-full bg-slate-900/50 border-white/10 hover:border-pink-500/50 focus-within:!border-pink-500 p-3"
                       labelPlacement="outside"
                       placeholder="e.g. Adv. Rahat Khan"
@@ -120,7 +121,7 @@ const EditLawyerModal = ({ isModalOpen, setIsModalOpen, editingLawyer, onRefresh
                     <Label htmlFor="category">Practice Area (Category)</Label>
                     <select
                       id="category"
-                      defaultValue={editingLawyer?.category}
+                      defaultValue={editinglawyer?.category}
                       {...register("category", { required: "Category is required" })}
                       className="w-full bg-slate-900/50 border border-white/10 text-white rounded-xl p-3 focus:outline-none focus:border-pink-500"
                     >
@@ -139,7 +140,7 @@ const EditLawyerModal = ({ isModalOpen, setIsModalOpen, editingLawyer, onRefresh
                     <Label htmlFor="chamberLocation">Chamber Location</Label>
                     <select
                       id="chamberLocation"
-                      defaultValue={editingLawyer?.chamberLocation}
+                      defaultValue={editinglawyer?.chamberLocation}
                       {...register("chamberLocation", { required: "Location is required" })}
                       className="w-full bg-slate-900/50 border border-white/10 text-white rounded-xl p-3 focus:outline-none focus:border-pink-500"
                     >
@@ -160,7 +161,7 @@ const EditLawyerModal = ({ isModalOpen, setIsModalOpen, editingLawyer, onRefresh
                   <div>
                     <Label htmlFor="fee">Consultation Fee (BDT)</Label>
                     <Input
-                      defaultValue={editingLawyer?.fee}
+                      defaultValue={editinglawyer?.fee}
                       className="w-full bg-slate-900/50 border-white/10 hover:border-pink-500/50 focus-within:!border-pink-500 p-3"
                       type="number"
                       placeholder="1500"
@@ -178,7 +179,7 @@ const EditLawyerModal = ({ isModalOpen, setIsModalOpen, editingLawyer, onRefresh
                   <div>
                     <Label htmlFor="experience">Years of Experience</Label>
                     <Input
-                      defaultValue={editingLawyer?.experience}
+                      defaultValue={editinglawyer?.experience}
                       className="w-full bg-slate-900/50 border-white/10 hover:border-pink-500/50 focus-within:!border-pink-500 p-3"
                       type="number"
                       placeholder="5"
@@ -198,7 +199,7 @@ const EditLawyerModal = ({ isModalOpen, setIsModalOpen, editingLawyer, onRefresh
                 <div className="w-full">
                   <Label htmlFor="bio">Professional Bio</Label>
                   <TextArea
-                    defaultValue={editingLawyer?.bio}
+                    defaultValue={editinglawyer?.bio}
                     className="w-full bg-slate-900/50 border-white/10 hover:border-pink-500/50 focus-within:!border-pink-500 p-3"
                     placeholder="Briefly describe your legal expertise, case history, and achievements..."
                     {...register("bio", {
@@ -225,4 +226,4 @@ const EditLawyerModal = ({ isModalOpen, setIsModalOpen, editingLawyer, onRefresh
   );
 };
 
-export default EditLawyerModal;
+export default EditlawyerModal;

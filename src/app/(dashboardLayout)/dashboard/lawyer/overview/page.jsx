@@ -30,7 +30,7 @@ const OverViewPage = () => {
         </div>
       </Card>
 
-      {/* Lawyers Hired */}
+      {/* lawyers Hired */}
       <Card 
         className="bg-gradient-to-br from-slate-800 via-slate-900 to-black border border-slate-700/50 hover:border-slate-600 transition-all duration-300 hover:shadow-2xl hover:shadow-slate-900/50" 
         radius="lg"
@@ -39,7 +39,7 @@ const OverViewPage = () => {
         <div className="p-6 flex flex-col justify-between h-full">
           <div>
             <span className="text-slate-500 text-xs font-bold uppercase tracking-wider">
-              Lawyers Hired
+              lawyers Hired
             </span>
             <h2 className="text-4xl font-black text-white mt-2 bg-gradient-to-r from-pink-400 to-rose-400 bg-clip-text text-transparent">
               4

@@ -6,8 +6,8 @@ export const myAppointments = async (email) => {
   return result;
 };
 
-// সার্চ ফিল্টার অনুযায়ী সব আইনজীবীদের তালিকা নিয়ে আসার জন্য (Browse/Find Lawyers পেজের জন্য)
-export const fetchLawyers = async (query) => {
+// সার্চ ফিল্টার অনুযায়ী সব আইনজীবীদের তালিকা নিয়ে আসার জন্য (Browse/Find lawyers পেজের জন্য)
+export const fetchlawyers = async (query) => {
   const result = await serverFetch(`/api/lawyers?${query.toString()}`);
 if(!result || !Array.isArray(result) || result == null){
   return []
@@ -16,7 +16,7 @@ if(!result || !Array.isArray(result) || result == null){
 };
 
 // কোনো ফিচারেড বা টপ আইনজীবীর তালিকা দেখানোর জন্য (যদি ব্যাকএন্ডে এপিআই থাকে)
-export const fetchFeaturedLawyers = async () => {
+export const fetchFeaturedlawyers = async () => {
   const result = await serverFetch(`/api/lawyers/featured`);
   return result;
 };

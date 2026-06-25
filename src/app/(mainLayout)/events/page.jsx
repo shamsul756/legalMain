@@ -1,13 +1,13 @@
 import { Suspense } from "react";
 import { Card } from "@heroui/react";
 import FilterPanel from "@/components/FilterPannel";
-import LawerCard from "@/components/LawerCard";
-import { fetchLawyers } from "@/lib/api/events/data";
+import lawerCard from "@/components/LawerCard";
+import { fetchlawyers } from "@/lib/api/events/data";
 
 // ১. লয়ারদের ডাটা ফেচ করার জন্য আলাদা একটি সাব-কম্পোনেন্ট (যাতে সাসপেন্স কাজ করে)
-async function LawyersGrid({ params }) {
+async function lawyersGrid({ params }) {
     // এখানে কুয়েরি স্ট্রিং পাস করা হচ্ছে (যেমন: search=criminal&location=dhaka)
-    const lawyers = await fetchLawyers(params.toString()) || [];
+    const lawyers = await fetchlawyers(params.toString()) || [];
 
     if (lawyers.length === 0) {
         return (
@@ -20,14 +20,14 @@ async function LawyersGrid({ params }) {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {lawyers.map((lawyer) => (
-                <LawerCard key={lawyer._id || lawyer.id} lawyer={lawyer} buttonText="View Profile" />
+                <lawerCard key={lawyer._id || lawyer.id} lawyer={lawyer} buttonText="View Profile" />
             ))}
         </div>
     );
 }
 
 // ২. মেইন পেজ কম্পোনেন্ট
-export default async function BrowseLawyersPage({ searchParams }) {
+export default async function BrowselawyersPage({ searchParams }) {
     // Next.js 15+ রিকোয়ারমেন্ট অনুযায়ী searchParams await করা হলো
     const sParams = (await searchParams) || {}; 
     
@@ -41,7 +41,7 @@ export default async function BrowseLawyersPage({ searchParams }) {
     if (location) params.set("location", location);
 
     // স্কেলিটন লোডিং UI কম্পোনেন্ট
-    const LawyersSkeleton = () => (
+    const lawyersSkeleton = () => (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {Array(6).fill(0).map((_, i) => (
                 <Card key={i} className="bg-slate-900/50 border border-white/5 p-4 space-y-4 animate-pulse">
@@ -72,8 +72,8 @@ export default async function BrowseLawyersPage({ searchParams }) {
             </Suspense>
 
             {/* এবার আপনার সাসপেন্স লোডিং নিখুঁতভাবে কাজ করবে */}
-            <Suspense key={params.toString()} fallback={<LawyersSkeleton />}>
-                <LawyersGrid params={params} />
+            <Suspense key={params.toString()} fallback={<lawyersSkeleton />}>
+                <lawyersGrid params={params} />
             </Suspense>
         </div>
     );

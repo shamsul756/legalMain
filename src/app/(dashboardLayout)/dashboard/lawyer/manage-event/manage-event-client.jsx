@@ -92,7 +92,7 @@ const ManageLegalRecordsClient = ({ records: initialRecords = [] }) => {
         <div className="w-full overflow-x-auto">
           {displayRecords.length > 0 ? (
             <Table
-              aria-label="Lawyer Manage Hiring History Table"
+              aria-label="lawyer Manage Hiring History Table"
               className="w-full"
               color="default"
               shadow="none"
