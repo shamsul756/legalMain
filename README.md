@@ -1,4 +1,6 @@
 ### ⚖️ LegalEase – Smart Legal Service & lawyer Hiring Platform
+LegalEase link: https://legal-ease-main.vercel.app
+
 
 **LegalEase** is a modern, feature-rich legal service platform designed to bridge the gap between clients and professional lawyers. The platform enables users to discover, compare, and hire experienced lawyers based on their specialization, consultation fees, and professional profiles. With an elegant user interface and seamless user experience, LegalEase simplifies the process of finding trusted legal assistance anytime, anywhere.
 
