@@ -57,8 +57,8 @@ The primary goal of **LegalEase** is to create a reliable digital legal marketpl
 ![alt text](image-4.png)
 <!-- footer section  -->
 ![alt text](image-5.png)
-
-
+<!-- search  -->
+![alt text](image-6.png)
 
 
 

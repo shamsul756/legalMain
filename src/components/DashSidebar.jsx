@@ -26,15 +26,15 @@ const lawyerMenu = [
   { key: "guest", label: "Guest", icon: FaUsers, href: "/dashboard/guest" },
 ]
   const guestMenu = [
-    { key: "overview", label: "Overview", icon: FaUserCircle, href: "dashboard/guest" },
-    { key: "tickets", label: "My Tickets", icon: FaTicketAlt, href: "dashboard/guest/ticket" },
-    { key: "payments", label: "Payments", icon: FaHistory, href: "dashboard/guest/payment" },
+    { key: "overview", label: "Overview", icon: FaUserCircle, href: "/dashboard/guest" },
+    { key: "tickets", label: "My Tickets", icon: FaTicketAlt, href: "/dashboard/guest/ticket" },
+    { key: "payments", label: "Payments", icon: FaHistory, href: "/dashboard/guest/payment" },
   ]
 
   const adminMenu = [
     { key: "users", label: "Users", icon: FaUserShield, href: "/dashboard/users" },
     { key: "events", label: "Approve Events", icon: FaCalendarAlt, href: "/dashboard/events" },
-    { key: "transactions", label: "Transaction Logs", icon: FaHistory, href: "/dashboard/transactions" },
+    { key: "transactions", label: "Transaction Logs", icon: FaHistory, href: "/dashboard/payment" },
   ]
 
   const role = session?.user?.role;

@@ -1,7 +1,7 @@
 
 import DashHeader from "@/components/DashHeader";
-import TicketsTable from "@/components/TicketsTable";
-import { fethMyBooking } from "@/lib/api/bookings/data";
+import TicketsTable from "@/components/TicketTable";
+import { fethMyBooking } from "@/lib/api/booking/data";
 import { getUser } from "@/lib/api/session";
 
 
