@@ -12,7 +12,7 @@ export default function Home() {
     <BrowseLawyersPage/>
     <ExtraSection/>
     <ServicesFeatures/>
-    {/* <Appraisals/> */}
+    <Appraisals/>
    </div>
   );
 }
