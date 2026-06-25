@@ -16,8 +16,7 @@ export default async function PremiumSuccess({ searchParams }) {
     });
     
     console.log(session);
-
-  export default function PremiumButton() {
+ function PremiumButton() {
   const updateToPremium = async () => {
     const res = await fetch("/api/checkout_sessions");
     const data = await res.json();
